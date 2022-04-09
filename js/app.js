@@ -29,6 +29,21 @@ fetch("./../json/preguntas.json")
             let indexPregunta = data[event.currentTarget.innerText-1]
 
             console.log(indexPregunta)
+
+            let modal =document.querySelector("#myModal");
+
+            console.log(modal);
+
+            modal.style.display = "block";
+
+            let modalBodyP = document.querySelector(".modal-body p");
+
+            modalBodyP.textContent = indexPregunta;
+
+            let close = document.querySelector("#close");
+            close.onclick = function(){
+                modal.style.display = "none";
+            }
         })
         
     });
