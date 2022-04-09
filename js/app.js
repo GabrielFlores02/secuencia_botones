@@ -12,7 +12,7 @@ centerText.forEach(item => {
 
 console.log(centerText)
 */
-fetch("./../json/preguntas.json")
+fetch("https://gabrielflores02.github.io/secuencia_botones/json/preguntas.json")
 .then(response => response.json())
 .then(data => {
     //console.log(data)
